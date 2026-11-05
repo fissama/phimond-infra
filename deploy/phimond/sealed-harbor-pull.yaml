@@ -1,0 +1,14 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: harbor-pull
+  namespace: phimond
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCIWCbZMSbwGW4REHrv/AcpWi4KBbZBEWuQI8QGvGL+LuUWOf6VP7rWML+A5I+BL+0LmLdd4UN9Yo7tZv0jeoQhUAAM5GjrERNCHKe+aLryWwl3eI1H6JIM5DhnbLThPakzqt59pG7kIWG97jDHenWK5COREIu8zIlEj33CXxqrln+rHgQyUIHd0tu5ddJvIEkHyW8wuHYbzrNauDK3XH4fB4HFE4SU/YTy83w7+eEwe8LEN/9t93OHSsIF5XARY6ahSVzneIL9z8WDT4Pb2cVra/4Y6H+A5HroQHrlBPOO0+iJB+Rell/00B8D8F0jESz0mBZ8JH1Kryrz1fWsZ8DPmxyrI8sQ2N87ziRkn/zMb91jIwnxF1GPNj182gkoX77bh9W3mX8WgBkvqoQWWOEWtx129Oom20wkm5aUpjpdTkB6rsJROqtDnMRJ5DXQD33GQxUWe68LEJHrYMV7k+ibD0XphS2s1OiTlFaQSBvD2G7HSjDFIeu2oeBEb7GMGKLq/005CvaTjykKnyVjDM+1s3pO8bNpFNjWKpn0RxtbHbANPdOktH8Vw8AvgeRxavO6EhrVTT2TNrTSR69yTrShXZDnj+4A0Ef4NEmDP3PVrVzeZZNA+ovsgnky2tGoXKny9LvFk5SsgbmR0OyyurRgBdPSoz12XTOPiyltPwBHESaJ0Yxg59YWEQdulQgJy7iFlKGpilLQOVGWj7pufQo4Nn5FNCArycy69Tc0oUa+YfNf0vVcRXdhiIOvubu4f+qccdpZBAxqnrVk5Y/U8KL499gCwV6As+VTilLGsqp45QnAQ+iQVDySUVZQdRfpaiRkcaNgn1fi619PkRiA9udu5NWOM0h6mPvSQtKQxZyqrgovjEys/k0R5V94v+Rqc+MGqVTWzTYFiy4NEcJHLxPAv1W57ycr0ds0KsOggzmolqLDveIXXiXrOok/PTZog602K2E8nJY1EmPVH+aVgIXl8KEDescbLeVZ+4COH1JQq8gHnzi/8+TIzzOnKnbmKkIkadxR7kDBonI=
+  template:
+    metadata:
+      name: harbor-pull
+      namespace: phimond
+    type: kubernetes.io/dockerconfigjson
