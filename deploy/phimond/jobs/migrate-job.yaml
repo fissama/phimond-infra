@@ -17,7 +17,7 @@ spec:
         - name: harbor-pull
       containers:
         - name: migrate
-          image: harbor.philand.io.vn/phimond/phimond-server:v1.0.0
+          image: harbor.philand.io.vn/phimond/phimond-server:v1.1.0
           args: ["-migrate", "-migrations", "/migrations"]
           envFrom:
             - secretRef:

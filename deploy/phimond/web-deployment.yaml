@@ -16,7 +16,7 @@ spec:
         - name: harbor-pull
       containers:
         - name: phimond-web
-          image: harbor.philand.io.vn/phimond/phimond-web:v1.0.0
+          image: harbor.philand.io.vn/phimond/phimond-web:v1.1.0
           imagePullPolicy: IfNotPresent
           ports:
             - { containerPort: 8080, name: http }
