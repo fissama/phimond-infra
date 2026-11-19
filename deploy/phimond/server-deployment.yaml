@@ -21,7 +21,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: phimond-server
-          image: harbor.philand.io.vn/phimond/phimond-server:v1.1.0
+          image: harbor.philand.io.vn/phimond/phimond-server:v1.1.1
           imagePullPolicy: IfNotPresent
           ports:
             - { containerPort: 8090, name: http }
